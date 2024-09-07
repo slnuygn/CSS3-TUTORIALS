@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+
+        /*
+            tüm h1'leri seç
+        h1{
+            color: red;
+            background: blue;
+        }
+
+        p{
+            color: red;
+            background: blueviolet;
+            
+        }
+
+        */
+
+        /*
+        h1,p{
+            color: red;
+            background: blue;
+        } you can choose both like this
+        */
+
+        /*
+
+        #logo {
+            color: red;
+            background: blue;
+        } only styles the one with the logo ID
+
+        .info {
+            color: aqua;
+            background-color: darkolivegreen;
+        } only styles the one with the info CLASS 
+         
+        */
+
+        /* # is for id, . is for class */
+
+        /*
+
+        #logo, .lead {
+
+            color: red;
+            background: blue;
+
+        } using comma here is like using OR operation
+            
+        */
+
+        /*
+
+        #para1.lead {
+            color: red;
+            background: blue;    
+        } both with para1 #id AND lead .class
+
+        */
+
+        /*
+        a{
+            text-decoration: underline;
+        }
+        */
+
+        
+
+        ul li a {
+            text-decoration: overline;
+        }  /*the a tag inside li inside ul, we specified by hierarchy with just using space*/
+
+        /*
+
+        .info span {
+            color: red;
+        } 
+            
+        */
+
+        .info .primary {
+            color: blue;
+        }
+
+        * {
+            font-size: 30px;
+        } /*the global selector*/
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptate!
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet consectetur, adipisicing elit. Esse, illo?
+    </p>
+    <p class="info">
+        Lorem ipsum <span>dolor</span>, sit amet consectetur adipisicing elit. Necessitatibus, adipisci.
+    </p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+    
+</body>
+</html>
