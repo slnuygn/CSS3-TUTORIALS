@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 75%;
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+        th, td {
+            padding: 5px;
+        }
+        thead tr {
+            background: green;
+            color: white;
+        }
+        tbody tr {
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background: #81a386;
+        }
+        tbody tr:hover{
+            background: rgb(53, 78, 53);
+        } 
+    </style>
+</head>
+<body>
+    <table class="Employees">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Selin</td>
+                <td>Software</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>Software</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>Software</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>Software</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

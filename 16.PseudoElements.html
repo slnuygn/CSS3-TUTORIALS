@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Elements</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        /* .para1::first-line{
+            color: red;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 50px;
+        } */
+         .para1::after{
+            content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tool_logo_2006.svg/1280px-Tool_logo_2006.svg.png);
+         }
+         /* .para1::before{
+            content: "Paragraf Öncesi";
+         } */
+         .para1::before{
+            content: url(./images/Deftones_\(Logo\).png);
+         }
+
+    </style>
+ </head>
+ <body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt maiores distinctio quasi vitae. Ab magni tenetur quod facilis accusamus suscipit.
+    Nisi, eligendi. Incidunt repellendus ipsa non earum voluptatibus. Repellendus enim perferendis, at fuga ipsam numquam quia ducimus molestias placeat magnam?
+    Iure odio inventore autem ex et, rem facere quasi voluptatibus eveniet reiciendis, nihil aliquam, sed molestias? Inventore, eveniet? Perspiciatis, voluptate.
+    Eos minima, culpa sequi repellat suscipit cupiditate enim, nobis nemo incidunt obcaecati doloremque laboriosam quia alias nihil atque voluptates natus?
+    Alias perferendis deleniti cum. Dolorem molestiae consequuntur dicta reiciendis voluptates veritatis numquam sequi deserunt totam vel doloribus velit, quia asperiores.
+    </p>
+    
+ </body>
+ </html>
