@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .fixed-topbar{
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px; 
+            /* 0 tarzı değerler de verilebilir */
+        }
+        body{
+            background: url(./images/silly-serj-v0-knmubn2ywc1b1.webp);
+            height: 1000px;         /* scroll olması için */
+
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            /* defaullta z indexi 0 */
+        }
+        .blue{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            left: 5px;
+            top: 5px;
+            z-index: 2; 
+            /* kırmızıda z-index 1 ise bunu yaparsak kırmızı kutunun üstüne çıkacaktır, 
+            -1 dersek de gerileyecek, uzaklaşacaktır */
+
+        }
+
+        /* position relative özelliği sayesinde elementin bulunduğu yere relatif olarak pozisyon verebiliyoruz */
+
+        .outer-box{
+            width: 200px;
+            height: 200px;
+            background-color:brown;
+            position: relative;             /* static(default) verilmemesi, relative ya da fixed verilmesi gerekiyor */
+            left: 100px;
+            top: 100px;
+        }
+        .inner-box{
+            width: 50px;
+            height: 50px;
+            background-color:cadetblue;
+            position: absolute;
+            
+            right: 10px;
+            top: 10px;
+        }
+        span{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background-color: rebeccapurple;
+            position: relative;
+            left: 75px;
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="fixed-topbar">Silly Serj</div>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+    <!-- outer box'ın position özelliği yoksa inner-box bir üst parenta gidiyor ve onun positionı varsa kendini ona göre ayarlıyor -->
+     <span>
+     </span>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facilis.
+</body>
+</html>
+

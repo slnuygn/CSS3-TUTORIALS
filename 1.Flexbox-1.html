@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;            /* flexbox'a dönüştürmüş olduk */
+            min-height: 600px;
+            flex-direction: column; /* the default flex-direction is row */
+            justify-content: center;
+            align-items: center;
+            /* justify-content: flex-start;     yatayda çalışmamızı sağlıyor */
+            /* justify-content için default flex-start. space evenly space around space between gibi seçeneklerimiz de var */
+            /*align-items: flex-end;             dikeyde çalışmamızı sağlıyor */ 
+            background: black;
+            flex-wrap: wrap;    /* bu özelliği kullanmasak article 6 aşağıya geçmezdi ve hepsini tek bir satırda sıkıştırırdı */
+
+        }
+        .box{
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Container -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <!-- <div class="box">
+            <h1>Article 4</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 5</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 6</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div> -->
+
+    </div>
+
+</body>
+</html>
