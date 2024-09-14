@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - CSS Units</title>
+    <style>
+        /* html{
+            font-size: 20px;
+        } */
+        /* div{
+            font-size: 1.5em;
+        } */
+        /* p{
+            font-size: 50%;
+            font-size: 1.5em;
+            padding: 1.5em;
+        } */
+         /* div{
+                40% of the viewport width
+            width: 40vw;
+                10% of the viewport height
+            height: 10vh;
+            background: url(./HD-wallpaper-the-inner-me-alex-grey-tool-tool-band-thumbnail.jpg);
+            color: antiquewhite;
+         } */
+        .background{
+            background: url(./wp2195720.jpg) center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: antiquewhite;
+            align-items: center;
+            padding: 10rem;
+        }
+        h1{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 3px;
+            /* boyle kücük seylerde pixel kullanmanda sakınca olmaz */
+        }
+        @media(max-width: 500px){
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                display: none;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- Responsive Units
+    em(parent'ın font size'ı), rem(html elementimizin font size'ı), %, vw(viewport width), vh(viewport height) 
+    tarayıcımızda gördüğümüz tüm alan viewporttur
+    pixeller bağımlıdır ve yeniliklere adaptasyonda zorluk çıkarırlar, fakat orantılı birimler adaptasyon gösterir-->
+</head>
+<body>
+    <!-- <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, expedita!</p>
+    </div> -->
+    <div class="background">
+        <h1>Welcome to the site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, architecto?</p>
+    </div>
+    <!-- pexels web sitesinde birçok ücretsiz stock photo mevcut -->
+</body>
+</html>
